@@ -19,7 +19,7 @@
 .about-image-card {
   background: white;
   border-radius: var(--radius-lg);
-  padding: 40px;
+  padding: 28px;
   box-shadow: var(--shadow-lg);
   position: relative;
   z-index: 1;
@@ -28,7 +28,7 @@
 .about-icon-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 16px;
 }
 
 .about-icon-item {
@@ -36,13 +36,13 @@
 }
 
 .about-icon-item svg {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 10px;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 8px;
 }
 
 .about-icon-item span {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--gray-700);
 }
@@ -51,18 +51,18 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 0;
   background: var(--gradient);
   color: white;
   border-radius: var(--radius);
-  padding: 20px 28px;
+  padding: 16px 24px;
   text-align: center;
   box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);
 }
 
 .about-experience-badge strong {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
 }
 
