@@ -1,0 +1,66 @@
+.whyus {
+  padding: 100px 0;
+  background: var(--gray-100);
+  text-align: center;
+}
+
+.whyus-header {
+  margin-bottom: 48px;
+}
+
+.whyus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.whyus-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.whyus-card:hover {
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-light);
+}
+
+.whyus-number {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 800;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.whyus-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.whyus-card p {
+  font-size: 14px;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .whyus {
+    padding: 60px 0;
+  }
+
+  .whyus-grid {
+    grid-template-columns: 1fr;
+  }
+}

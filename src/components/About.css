@@ -1,0 +1,112 @@
+.about {
+  padding: 100px 0;
+  background: var(--gray-100);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-image-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-icon-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.about-icon-item {
+  text-align: center;
+}
+
+.about-icon-item svg {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+}
+
+.about-icon-item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.about-experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--gradient);
+  color: white;
+  border-radius: var(--radius);
+  padding: 20px 28px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);
+}
+
+.about-experience-badge strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.about-experience-badge span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.about-desc {
+  font-size: 16px;
+  color: var(--gray-500);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-features {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.check-icon {
+  color: #10b981;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-experience-badge {
+    right: 10px;
+    bottom: -15px;
+  }
+}
