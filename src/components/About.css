@@ -12,6 +12,8 @@
 
 .about-visual {
   position: relative;
+  padding-bottom: 40px;
+  padding-right: 40px;
 }
 
 .about-image-card {
@@ -19,6 +21,8 @@
   border-radius: var(--radius-lg);
   padding: 40px;
   box-shadow: var(--shadow-lg);
+  position: relative;
+  z-index: 1;
 }
 
 .about-icon-grid {
@@ -45,8 +49,9 @@
 
 .about-experience-badge {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
   background: var(--gradient);
   color: white;
   border-radius: var(--radius);
@@ -105,8 +110,13 @@
     gap: 40px;
   }
 
+  .about-visual {
+    padding-bottom: 30px;
+    padding-right: 20px;
+  }
+
   .about-experience-badge {
-    right: 10px;
-    bottom: -15px;
+    right: 0;
+    bottom: 0;
   }
 }
